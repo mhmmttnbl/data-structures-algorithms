@@ -21,28 +21,28 @@ struct Hash_table
 {
   /**
    * @brief Add pair to the hash table.
-   * @param __this Reference to the stack.
+   * @param __this Reference to the hash table.
    * @param __obj  Pair object to be added.
    */
   void (*insert)(struct Hash_table *__this, struct Pair *__obj);
   
   /**
    * @brief Removes pair with given key.
-   * @param __this Reference to the stack.
+   * @param __this Reference to the hash table.
    * @param __x Key.
    */
   void (*remove)(struct Hash_table *__this, char const *__x);
   
   /**
    * @brief Find pair with given key.
-   * @param __this Reference to the stack.
+   * @param __this Reference to the hash table.
    * @param __obj  Key.
    */
   struct Pair* (*find)(struct Hash_table *__this, char const *__x);
 
   /**
    * @brief Traverse over the hash table.
-   * @param  __this Reference to the stack.
+   * @param  __this Reference to the hash table.
    * @param __cb Callback function.
    */
   void (*traverse)(struct Hash_table *__this, void (*__cb)(char const *__k, Data __x));
