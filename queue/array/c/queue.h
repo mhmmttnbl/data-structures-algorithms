@@ -48,7 +48,7 @@ struct Queue
   int (*size)(struct Queue *__this);
   
   /**
-   * @brief Check whether the stack is queue.
+   * @brief Check whether the queue is empty.
    * @param __this Reference to the queue.
    * @returns 1 if the queue is empty, 0 if it's not.
    */
