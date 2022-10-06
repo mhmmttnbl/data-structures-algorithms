@@ -1,5 +1,5 @@
 /**
- * @file queue/array/c/main.c
+ * @file queue/list/c/main.c
  * @author TONBUL, Muhammet
  */
 
