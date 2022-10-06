@@ -28,7 +28,7 @@ main(int argc, char **argv)
   /* Fetch last element of the queue */
   printf("Back : %d\n", __queue->back(__queue));
   
-  /* Traverse over the stack */
+  /* Traverse over the queue */
   __queue->traverse(__queue, display);
 
   /* Remove */
@@ -37,7 +37,7 @@ main(int argc, char **argv)
 
   printf("After pop...\n");
 
-  /* Traverse over the stack */
+  /* Traverse over the queue */
   __queue->traverse(__queue, display);
   
   return(0);
